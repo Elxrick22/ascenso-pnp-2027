@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b46">
+  <title>Ascenso PNP 2027</title>
+  <style>
+    :root {
+      --navy: #102b46;
+      --blue: #1d4e89;
+      --gold: #e7b44a;
+      --bg: #f3f6fa;
+      --white: #ffffff;
+      --text: #172536;
+      --muted: #64748b;
+      --border: #dce4ed;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 22px 6%;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .emblem {
+      width: 49px;
+      height: 49px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    h1 { margin: 0; font-size: 23px; }
+    .subtitle { margin-top: 6px; color: #d6e2ef; font-size: 13px; }
+
+    main {
+      max-width: 1150px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .welcome {
+      background: linear-gradient(125deg, #102b46, #1d4e89);
+      color: white;
+      padding: 30px;
+      border-radius: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .welcome h2 { margin: 0 0 12px; font-size: 28px; }
+    .welcome p { line-height: 1.6; max-width: 650px; color: #e3edf8; }
+    .tag {
+      display: inline-block;
+      color: #172536;
+      background: var(--gold);
+      padding: 7px 11px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .section-title { margin: 30px 0 15px; font-size: 20px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 21px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      box-shadow: 0 3px 10px #102b4608;
+    }
+
+    .card .icon { font-size: 27px; }
+    .card h3 { margin: 13px 0 8px; font-size: 17px; }
+    .card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+
+    button {
+      border: 0;
+      background: var(--blue);
+      color: white;
+      padding: 12px 17px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    button:hover { filter: brightness(1.12); }
+    .welcome button { background: var(--gold); color: var(--navy); margin-top: 8px; }
+
+    .progress {
+      background: white;
+      padding: 22px;
+      border-radius: 13px;
+      border: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .bar {
+      height: 10px;
+      background: #e8edf4;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 13px 0 8px;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #26815c;
+      transition: width .3s;
+    }
+
+    .note { color: var(--muted); font-size: 12px; line-height: 1.6; }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 850px) {
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 480px) {
+      header { padding: 18px; }
+      main { margin: 20px auto; padding: 0 13px; }
+      .welcome { padding: 23px; }
+      .welcome h2 { font-size: 23px; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="emblem">PNP</div>
+      <div>
+        <h1>ASCENSO PNP 2027</h1>
+        <div class="subtitle">Plataforma de preparación académica</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <span class="tag">TU META: ASCENDER</span>
+      <h2>Prepárate para dar el siguiente paso</h2>
+      <p>
+        No se trata solamente de memorizar respuestas.
+        Aprende las normas, comprende cada pregunta y practica
+        hasta poder explicar por qué una respuesta es correcta.
+      </p>
+      <button onclick="alert('Próximamente: banco oficial de preguntas.')">
+        Comenzar a estudiar →
+      </button>
+    </section>
+
+    <h2 class="section-title">Tu centro de aprendizaje</h2>
+
+    <section class="cards">
+      <article class="card">
+        <div class="icon">📚</div>
+        <h3>Aprender</h3>
+        <p>Estudia las preguntas con explicaciones y referencias normativas.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🧠</div>
+        <h3>Repasar</h3>
+        <p>Refuerza las preguntas que fallas y recupera la respuesta de memoria.</p>
+      </article>
+      <article class="card">
+        <div class="icon">⏱️</div>
+        <h3>Simulacros</h3>
+        <p>Practica con tiempo, mide tus resultados y trabaja bajo presión.</p>
+      </article>
+      <article class="card">
+        <div class="icon">📈</div>
+        <h3>Mi progreso</h3>
+        <p>Descubre qué dominas, qué olvidas y qué debes estudiar nuevamente.</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">Tu progreso de aprendizaje</h2>
+
+    <section class="progress">
+      <strong>Preparación general</strong>
+      <div class="bar"><span id="progressBar"></span></div>
+      <p id="progressText" class="note">
+        Aún no hay resultados registrados. Tu progreso aparecerá aquí cuando conectemos el sistema de estudio.
+      </p>
+    </section>
+
+    <h2 class="section-title">Nuestro método</h2>
+    <section class="card">
+      <p>
+        <strong>1. Comprende:</strong> identifica qué te pregunta la norma.<br><br>
+        <strong>2. Responde:</strong> intenta contestar sin mirar la clave.<br><br>
+        <strong>3. Razona:</strong> explica por qué elegiste esa alternativa.<br><br>
+        <strong>4. Repasa:</strong> vuelve a las preguntas difíciles.<br><br>
+        <strong>5. Domina:</strong> demuestra que puedes recordar y explicar la respuesta días después.
+      </p>
+    </section>
+
+    <p class="note" style="margin-top:22px">
+      La clave oficial del balotario se conservará como referencia.
+      Las explicaciones complementarias se identificarán por separado.
+    </p>
+  </main>
+
+  <footer>
+    ASCENSO PNP 2027 · Proyecto educativo independiente
+  </footer>
+</body>
+</html>
